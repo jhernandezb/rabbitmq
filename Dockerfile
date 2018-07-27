@@ -1,4 +1,4 @@
-FROM rabbitmq
+FROM rabbitmq:3.6.5
 MAINTAINER contact@jhernandez.me
 COPY plugins/rabbitmq_delayed_message_exchange-0.0.1.ez /plugins/rabbitmq_delayed_message_exchange-0.0.1.ez
 RUN rabbitmq-plugins enable --offline rabbitmq_management
